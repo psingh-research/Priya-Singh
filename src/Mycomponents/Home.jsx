@@ -203,7 +203,7 @@ function Home() {
               <div className="absolute inset-0 rounded-lg transform translate-x-3 translate-y-3"></div>
               <img
                 src={priyasing}
-                alt="Professor Devang J Joshi"
+                alt="Priya Singh "
                 className="relative z-10 w-64 h-64 md:w-80 md:h-80 object-cover rounded-lg shadow-lg"
               />
             </div>

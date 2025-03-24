@@ -50,6 +50,12 @@ export default function Navbar() {
                   >
                     Administrative Activities
                   </Link>
+                  <Link
+                    to="/honorandrecognition"
+                    className="text-lg font-medium hover:text-blue-600"
+                  >
+                    Honor and Recognition
+                  </Link>
                 </div>
               </div>
             </SheetContent>
@@ -98,6 +104,12 @@ export default function Navbar() {
             className="text-gray-700 hover:text-blue-600 font-medium transition"
           >
             Administrative Activities
+          </Link>
+          <Link
+            to="/honorandrecognition"
+            className="text-gray-700 hover:text-blue-600 font-medium transition"
+          >
+            Honor and Recognition
           </Link>
         </nav>
       </div>

@@ -7,6 +7,7 @@ import Research from "./Mycomponents/Research"
 import TeachingActivites from "./Mycomponents/TeachingActivites"
 import Responsibilities from "./Mycomponents/Responsibilities"
 import Navbar from "./DepthComponents/Navbar"
+import HonorAndRecognition from "./Mycomponents/HonorAndRecognition"
 function App() {
   return (
     <>
@@ -27,6 +28,10 @@ function App() {
             <Route
               path="/responsibilities"
               element={<Responsibilities />}
+            ></Route>
+            <Route
+             path="/honorandrecognition"
+             element={<HonorAndRecognition/>}
             ></Route>
           </Routes>
         </BrowserRouter>
