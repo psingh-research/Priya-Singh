@@ -8,7 +8,7 @@ function Home() {
       {/* Main content area */}
       <div className="container mx-auto px-4 py-16 md:py-24">
         {/* Hero Section */}
-        <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-12">
+        <div className="flex flex-col-reverse md:flex-row md:items-start md:justify-between gap-12">
           {/* Left Section: Professor's Info */}
           <div className="w-full md:w-3/5 space-y-6">
             <div className="space-y-2">
@@ -44,7 +44,7 @@ function Home() {
                 software solutions and mentoring students in cutting-edge
                 research in the field of ML research. Through active
                 collaborations with academia and industry, I strive to push the
-                boundaries of AI applications in software engineering, security.
+                boundaries of AI applications in software engineering, security,
                 computer vision, and applications of deep learning.
               </p>
             </div>
@@ -72,29 +72,33 @@ function Home() {
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <span className="text-gray-600">Email:</span>
-                    <a
-                      href="mailto:piyushg@eduvance.in"
-                      className="ml-2 text-blue-600 hover:text-blue-800 hover:underline"
-                    >
-                      priya.singh.academia@gmail.com
-                    </a>
+                    <div className="ml-2 flex flex-col">
+                      <a
+                        href="mailto:priya.singh.academia@gmail.com"
+                        className="text-blue-600 hover:text-blue-800 hover:underline"
+                      >
+                        priya.singh.academia@gmail.com
+                      </a>
+                      <a
+                        href="mailto:priyasingh@dtu.ac.in"
+                        className="text-blue-600 hover:text-blue-800 hover:underline"
+                      >
+                        priyasingh@dtu.ac.in
+                      </a>
+                    </div>
                   </li>
                   <li className="flex items-center">
                     <span className="text-gray-600">University:</span>
-                    <span className="ml-2">
-                      Delhi Technological University{" "}
-                    </span>
+                    <span className="ml-2">Delhi Technological University</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-gray-600">Office:</span>
-                    <span className="ml-2">
-                      Software Engineering Department{" "}
-                    </span>
+                    <span className="ml-2">117A 1st floor, AB-4 DTU</span>
                   </li>
                 </ul>
               </div>
 
-              {/* Memberships */}
+              {/* Professional Memberships */}
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
                   <svg
@@ -124,6 +128,41 @@ function Home() {
                     CSI
                   </span>
                 </div>
+              </div>
+
+              {/* Experience */}
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 mr-2 text-blue-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  Experience
+                </h3>
+                <ul className="space-y-2">
+                  <li className="flex items-center">
+                    <span className="text-gray-600">Industry:</span>
+                    <span className="ml-2">
+                      2.5 years, Oracle Pvt. Ltd., Bangalore, India
+                    </span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-gray-600">Teaching:</span>
+                    <span className="ml-2">
+                      4.5 years, Delhi Technological University, Delhi, India
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -157,16 +196,7 @@ function Home() {
                     Google Scholar
                   </span>
                 </a>
-                <a
-                  href="https://www.webofscience.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-                >
-                  <span className="text-blue-600 font-medium">
-                    Web of Science
-                  </span>
-                </a>
+             
                 <a
                   href="https://www.scopus.com/authid/detail.uri?authorId=57703196400"
                   target="_blank"
@@ -176,7 +206,7 @@ function Home() {
                   <span className="text-blue-600 font-medium">Scopus</span>
                 </a>
                 <a
-                  href=" https://www.researchgate.net/profile/Priya-Singh-64?ev=hdr_xprf"
+                  href="https://www.researchgate.net/profile/Priya-Singh-64?ev=hdr_xprf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
@@ -203,7 +233,7 @@ function Home() {
               <div className="absolute inset-0 rounded-lg transform translate-x-3 translate-y-3"></div>
               <img
                 src={priyasing}
-                alt="Priya Singh "
+                alt="Priya Singh"
                 className="relative z-10 w-64 h-64 md:w-80 md:h-80 object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -213,21 +243,18 @@ function Home() {
         {/* Quick Stats Section */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <div className="text-3xl font-bold text-blue-600">XX+</div>
+            <div className="text-3xl font-bold text-blue-600">20+</div>
             <div className="text-gray-600 mt-2">Publications</div>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <div className="text-3xl font-bold text-blue-600">XX+</div>
+            <div className="text-3xl font-bold text-blue-600">20+</div>
             <div className="text-gray-600 mt-2">Citations</div>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <div className="text-3xl font-bold text-blue-600">XX+</div>
+            <div className="text-3xl font-bold text-blue-600">4+</div>
             <div className="text-gray-600 mt-2">Years Experience</div>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <div className="text-3xl font-bold text-blue-600">XX+</div>
-            <div className="text-gray-600 mt-2">Research Projects</div>
-          </div>
+        
         </div>
       </div>
     </div>
