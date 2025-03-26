@@ -51,10 +51,10 @@ export default function Navbar() {
                     Administrative Activities
                   </Link>
                   <Link
-                    to="/honorandrecognition"
+                    to="/awardandrecognition"
                     className="text-lg font-medium hover:text-blue-600"
                   >
-                    Honor and Recognition
+                    Award and Recognition
                   </Link>
                 </div>
               </div>
@@ -106,10 +106,10 @@ export default function Navbar() {
             Administrative Activities
           </Link>
           <Link
-            to="/honorandrecognition"
+            to="/awardandrecognition"
             className="text-gray-700 hover:text-blue-600 font-medium transition"
           >
-            Honor and Recognition
+            Award and Recognition
           </Link>
         </nav>
       </div>

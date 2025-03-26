@@ -154,6 +154,19 @@ function TeachingActivities() {
     },
   ]
 
+  // Extract unique subjects from both undergraduate and postgraduate subjects
+  const allSubjects = [
+    ...undergraduateSubjects.map((subject) => subject.subjectName),
+    ...postgraduateSubjects.map((subject) => subject.subjectName),
+  ]
+  const uniqueSubjects = [...new Set(allSubjects)].sort() // Remove duplicates and sort alphabetically
+
+  // Map unique subjects to a list with IDs for display
+  const uniqueSubjectsList = uniqueSubjects.map((subject, index) => ({
+    id: index + 1,
+    subjectName: subject,
+  }))
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-16">
       <div className="container mx-auto px-4">
@@ -162,13 +175,13 @@ function TeachingActivities() {
             Teaching Activities
           </h1>
           <p className="text-gray-600 text-center mb-12 text-lg">
-            Subjects taught by Priya Singh 
+            Subjects taught by Priya Singh
           </p>
 
-          {/* Undergraduate Subjects Section */}
+          {/* Unique Subjects Taught Section */}
           <section className="mb-16">
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">
-              Undergraduate Subjects
+              Subjects Taught
             </h2>
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
@@ -176,17 +189,12 @@ function TeachingActivities() {
                   <tr className="bg-blue-600 text-white">
                     <th className="py-3 px-4 text-sm font-medium">S.No.</th>
                     <th className="py-3 px-4 text-sm font-medium">
-                      Subject Code
-                    </th>
-                    <th className="py-3 px-4 text-sm font-medium">
                       Subject Name
                     </th>
-                    <th className="py-3 px-4 text-sm font-medium">Year</th>
-                    <th className="py-3 px-4 text-sm font-medium">Semester</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {undergraduateSubjects.map((subject, index) => (
+                  {uniqueSubjectsList.map((subject, index) => (
                     <tr
                       key={subject.id}
                       className={`${
@@ -197,66 +205,7 @@ function TeachingActivities() {
                         {subject.id}
                       </td>
                       <td className="py-3 px-4 text-sm text-gray-700">
-                        {subject.subjectCode}
-                      </td>
-                      <td className="py-3 px-4 text-sm text-gray-700">
                         {subject.subjectName}
-                      </td>
-                      <td className="py-3 px-4 text-sm text-gray-700">
-                        {subject.year}
-                      </td>
-                      <td className="py-3 px-4 text-sm text-gray-700">
-                        {subject.semester}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          {/* Postgraduate Subjects Section */}
-          <section className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">
-              Postgraduate Subjects
-            </h2>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse">
-                <thead>
-                  <tr className="bg-blue-600 text-white">
-                    <th className="py-3 px-4 text-sm font-medium">S.No.</th>
-                    <th className="py-3 px-4 text-sm font-medium">
-                      Subject Code
-                    </th>
-                    <th className="py-3 px-4 text-sm font-medium">
-                      Subject Name
-                    </th>
-                    <th className="py-3 px-4 text-sm font-medium">Year</th>
-                    <th className="py-3 px-4 text-sm font-medium">Semester</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {postgraduateSubjects.map((subject, index) => (
-                    <tr
-                      key={subject.id}
-                      className={`${
-                        index % 2 === 0 ? "bg-white" : "bg-gray-50"
-                      } hover:bg-gray-100 transition-colors`}
-                    >
-                      <td className="py-3 px-4 text-sm text-gray-700">
-                        {subject.id}
-                      </td>
-                      <td className="py-3 px-4 text-sm text-gray-700">
-                        {subject.subjectCode}
-                      </td>
-                      <td className="py-3 px-4 text-sm text-gray-700">
-                        {subject.subjectName}
-                      </td>
-                      <td className="py-3 px-4 text-sm text-gray-700">
-                        {subject.year}
-                      </td>
-                      <td className="py-3 px-4 text-sm text-gray-700">
-                        {subject.semester}
                       </td>
                     </tr>
                   ))}
