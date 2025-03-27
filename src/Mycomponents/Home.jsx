@@ -19,7 +19,7 @@ function Home() {
                 Assistant Professor
               </h2>
               <h2 className="text-sm md:text-sm font-medium text-gray-800-700">
-                Dept. of Electronics and Communication Engineering
+                Dept. of Software Engineering
             
              
                 Delhi Technological University
