@@ -15,8 +15,18 @@ function Home() {
               <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
                 Priya Singh
               </h1>
-              <h2 className="text-xl md:text-2xl font-medium text-blue-700">
-                Professor, Department of Software Engineering
+              <h2 className="text-xl md:text-xl font-medium text-gray-800-700">
+                Assistant Professor
+              </h2>
+              <h2 className="text-lg md:text-sm font-medium text-gray-800-700">
+                Dept. of Electronics and Communication Engineering
+              </h2>
+              <h2 className="text-xl md:text-sm font-medium text-gray-800-700">
+                Delhi Technological University
+                <br />
+                (Formerly Delhi College of Engineering)
+                <br />
+                Delhi, India
               </h2>
               <div className="h-1 w-32 bg-blue-600 mt-2"></div>
             </div>
@@ -196,7 +206,7 @@ function Home() {
                     Google Scholar
                   </span>
                 </a>
-             
+
                 <a
                   href="https://www.scopus.com/authid/detail.uri?authorId=57703196400"
                   target="_blank"
@@ -254,7 +264,6 @@ function Home() {
             <div className="text-3xl font-bold text-blue-600">4+</div>
             <div className="text-gray-600 mt-2">Years Experience</div>
           </div>
-        
         </div>
       </div>
     </div>
