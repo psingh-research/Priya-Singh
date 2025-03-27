@@ -18,10 +18,10 @@ function Home() {
               <h2 className="text-xl md:text-xl font-medium text-gray-800-700">
                 Assistant Professor
               </h2>
-              <h2 className="text-lg md:text-sm font-medium text-gray-800-700">
+              <h2 className="text-sm md:text-sm font-medium text-gray-800-700">
                 Dept. of Electronics and Communication Engineering
-              </h2>
-              <h2 className="text-xl md:text-sm font-medium text-gray-800-700">
+            
+             
                 Delhi Technological University
                 <br />
                 (Formerly Delhi College of Engineering)
