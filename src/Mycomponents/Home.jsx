@@ -261,7 +261,7 @@ function Home() {
             <div className="text-gray-600 mt-2">Citations</div>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <div className="text-3xl font-bold text-blue-600">4+</div>
+            <div className="text-3xl font-bold text-blue-600">6+</div>
             <div className="text-gray-600 mt-2">Years Experience</div>
           </div>
         </div>
