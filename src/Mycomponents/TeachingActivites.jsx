@@ -1,143 +1,81 @@
 import React from "react"
 
 function TeachingActivities() {
-  const undergraduateSubjects = [
-    {
-      id: 1,
-      subjectCode: "CO-101",
-      subjectName: "Programming Lab",
-      year: "2020-2021",
-      semester: "1st",
-    },
-    {
-      id: 2,
-      subjectCode: "CO-101",
-      subjectName: "Programming Lectures",
-      year: "2020-2021",
-      semester: "1st",
-    },
-    {
-      id: 3,
-      subjectCode: "CO-102",
-      subjectName: "Programming Lectures",
-      year: "2020-2021",
-      semester: "2nd",
-    },
-    {
-      id: 4,
-      subjectCode: "CO-102",
-      subjectName: "Programming Lab",
-      year: "2020-2021",
-      semester: "2nd",
-    },
-    {
-      id: 5,
-      subjectCode: "CO-101",
-      subjectName: "Programming Lectures",
-      year: "2021-2022",
-      semester: "1st",
-    },
-    {
-      id: 6,
-      subjectCode: "SE-313",
-      subjectName: "Advanced Data Structures",
-      year: "2021-2022",
-      semester: "5th",
-    },
-    {
-      id: 7,
-      subjectCode: "SE-308",
-      subjectName: "Software Reliability",
-      year: "2021-2022",
-      semester: "5th",
-    },
-    {
-      id: 8,
-      subjectCode: "SM SE-409",
-      subjectName: "Software Maintenance",
-      year: "2021-2022",
-      semester: "7th",
-    },
-    {
-      id: 9,
-      subjectCode: "SE-326",
-      subjectName: "Machine Learning",
-      year: "2021-2022",
-      semester: "5th",
-    },
-    {
-      id: 10,
-      subjectCode: "CO-102",
-      subjectName: "Programming Lectures",
-      year: "2022-2023",
-      semester: "2nd",
-    },
-    {
-      id: 11,
-      subjectCode: "SE-308",
-      subjectName: "Software Reliability",
-      year: "2022-2023",
-      semester: "5th",
-    },
-    {
-      id: 12,
-      subjectCode: "SE-313",
-      subjectName: "Advanced Data Structures",
-      year: "2022-2023",
-      semester: "5th",
-    },
-    {
-      id: 13,
-      subjectCode: "CO-101",
-      subjectName: "Programming Lectures",
-      year: "2022-2023",
-      semester: "1st",
-    },
-    {
-      id: 14,
-      subjectCode: "CO-101",
-      subjectName: "Programming Lectures",
-      year: "2023-2024",
-      semester: "1st",
-    },
-    {
-      id: 15,
-      subjectCode: "SE-313",
-      subjectName: "Advanced Data Structures",
-      year: "2023-2024",
-      semester: "5th",
-    },
-    {
-      id: 16,
-      subjectCode: "SE-308",
-      subjectName: "Software Reliability",
-      year: "2023-2024",
-      semester: "5th",
-    },
-    {
-      id: 17,
-      subjectCode: "CO-102",
-      subjectName: "Programming Lectures",
-      year: "2023-2024",
-      semester: "2nd",
-    },
-  ]
+const undergraduateSubjects = [
+  {
+    id: 6,
+    subjectCode: "SE-313",
+    subjectName: "Advanced Data Structures",
+    year: "2021-2022",
+    semester: "5th",
+  },
+  {
+    id: 7,
+    subjectCode: "SE-308",
+    subjectName: "Software Reliability",
+    year: "2021-2022",
+    semester: "5th",
+  },
+  {
+    id: 8,
+    subjectCode: "SM SE-409",
+    subjectName: "Software Maintenance",
+    year: "2021-2022",
+    semester: "7th",
+  },
+  {
+    id: 9,
+    subjectCode: "SE-326",
+    subjectName: "Machine Learning",
+    year: "2021-2022",
+    semester: "5th",
+  },
+  {
+    id: 11,
+    subjectCode: "SE-308",
+    subjectName: "Software Reliability",
+    year: "2022-2023",
+    semester: "5th",
+  },
+  {
+    id: 12,
+    subjectCode: "SE-313",
+    subjectName: "Advanced Data Structures",
+    year: "2022-2023",
+    semester: "5th",
+  },
+  {
+    id: 15,
+    subjectCode: "SE-313",
+    subjectName: "Advanced Data Structures",
+    year: "2023-2024",
+    semester: "5th",
+  },
+  {
+    id: 16,
+    subjectCode: "SE-308",
+    subjectName: "Software Reliability",
+    year: "2023-2024",
+    semester: "5th",
+  },
+]
+
 
   const postgraduateSubjects = [
-    {
-      id: 1,
-      subjectCode: "CO-101",
-      subjectName: "Programming Fundamentals",
-      year: "2020-2021",
-      semester: "Odd",
-    },
-    {
-      id: 2,
-      subjectCode: "CO-101",
-      subjectName: "Programming Fundamentals Lab",
-      year: "2020-2021",
-      semester: "Odd",
-    },
+    // {
+    //   id: 1,
+    //   subjectCode: "CO-101",
+    //   subjectName: "Programming Fundamentals",
+    //   year: "2020-2021",
+    //   semester: "Odd",
+    // },
+    // {
+    //   id: 2,
+    //   subjectCode: "CO-101",
+    //   subjectName: "Programming Fundamentals Lab",
+    //   year: "2020-2021",
+    //   semester: "Odd",
+    // },
     {
       id: 3,
       subjectCode: "CO-102",
@@ -145,13 +83,13 @@ function TeachingActivities() {
       year: "2020-2021",
       semester: "Even",
     },
-    {
-      id: 4,
-      subjectCode: "CO-102",
-      subjectName: "Programming Fundamentals Lab",
-      year: "2020-2021",
-      semester: "Even",
-    },
+    // {
+    //   id: 4,
+    //   subjectCode: "CO-102",
+    //   subjectName: "Programming Fundamentals Lab",
+    //   year: "2020-2021",
+    //   semester: "Even",
+    // },
   ]
 
   // Extract unique subjects from both undergraduate and postgraduate subjects

@@ -279,7 +279,7 @@ function Research() {
       venue:
         "International Journal of System Assurance Engineering and Management, 2024",
       details: "",
-      doi: "",
+      doi: "10.1007/s13198-025-02738-z",
     },
     {
       id: 5,
