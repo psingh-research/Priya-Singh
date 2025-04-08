@@ -499,7 +499,7 @@ function Research() {
               Patents
             </h1>
             <p className="text-gray-600 text-center mb-8 text-lg">
-              Prof. Devang J Joshi's patented innovations
+              Assistant Professor Priya Singh's  patented innovations
             </p>
 
             <div className="space-y-6">
