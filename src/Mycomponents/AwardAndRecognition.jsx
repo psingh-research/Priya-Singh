@@ -4,44 +4,16 @@ function AwardAndRecognition() {
   const awards = [
     {
       id: 1,
-      title: "Outstanding Faculty Award",
+      title: "Commendable Research Award",
       organization: "Delhi Technological University (DTU)",
-      year: "2022",
+      year: "2024",
+      description: "Presented for Excellence in Research for the year 2023",
     },
-    {
-      id: 2,
-      title: "Best Paper Award",
-      organization:
-        "International Conference on Machine Learning and Data Science",
-      year: "2021",
-    },
-    {
-      id: 3,
-      title: "Excellence in Teaching Award",
-      organization: "NSUT Delhi",
-      year: "2020",
-    },
+
   ]
 
   const technicalProgramCommittee = [
-    {
-      id: 1,
-      event: "International Conference on Software Engineering (ICSE)",
-      role: "Technical Program Committee Member",
-      year: "2023",
-    },
-    {
-      id: 2,
-      event: "IEEE Conference on Artificial Intelligence (IEEE CAI)",
-      role: "Technical Program Committee Member",
-      year: "2022",
-    },
-    {
-      id: 3,
-      event: "Global Conference on Data Science and Analytics (GCDSA)",
-      role: "Session Chair",
-      year: "2021",
-    },
+ 
   ]
 
   const journalsReviewed = [
