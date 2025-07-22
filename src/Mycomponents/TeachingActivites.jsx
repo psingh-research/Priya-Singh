@@ -120,7 +120,7 @@ const undergraduateSubjects = [
             Teaching Activities
           </h1>
           <p className="text-gray-600 text-center mb-12 text-lg">
-            Subjects taught by Priya Singh
+            Subjects taught by Ms. Priya Singh
           </p>
 
           {/* Unique Subjects Taught Section */}
