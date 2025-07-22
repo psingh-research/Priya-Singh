@@ -4,7 +4,7 @@ function TeachingActivities() {
 const undergraduateSubjects = [
   {
     id: 6,
-    subjectCode: "SE-313",
+    subjectCode: "SE-310",
     subjectName: "Advanced Data Structures",
     year: "2021-2022",
     semester: "5th",
