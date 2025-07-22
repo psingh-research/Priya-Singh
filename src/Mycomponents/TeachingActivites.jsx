@@ -58,6 +58,13 @@ const undergraduateSubjects = [
     year: "2023-2024",
     semester: "5th",
   },
+    {
+    id: 17,
+    subjectCode: "SE-305",
+    subjectName: "Software Requirements Engineering",
+    year: "2021-2022",
+    semester: "5th",
+  }
 ]
 
 
