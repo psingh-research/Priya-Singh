@@ -13,7 +13,7 @@ function Home() {
           <div className="w-full md:w-3/5 space-y-6">
             <div className="space-y-2">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
-                Priya Singh_
+                Priya Singhhhhh
               </h1>
               <h2 className="text-xl md:text-xl font-medium text-gray-800-700">
                 Assistant Professor
