@@ -1,10 +1,8 @@
 {
   "name": "priya-singh",
-
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://psingh-research.github.io/Priya-Singh",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -38,6 +36,6 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
-    "vite": "^6.2.0"
+    "vite": "^6.3.5"
   }
 }
